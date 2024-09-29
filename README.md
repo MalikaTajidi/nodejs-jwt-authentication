@@ -15,7 +15,7 @@ This project is a Node.js API that implements authentication using JSON Web Toke
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/MalikaTajidi/nodejs-jwt-authentication.git
    ```
 2. Navigate to the project directory:
    ```bash
