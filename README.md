@@ -43,7 +43,7 @@ This project is a Node.js API that implements authentication using JSON Web Toke
 
 ### Register a User
 
-- **URL**: `/api/register`
+- **URL**: `/api/user/register`
 - **Method**: `POST`
 - **Body**:
   ```json
@@ -59,7 +59,7 @@ This project is a Node.js API that implements authentication using JSON Web Toke
 
 ### Login a User
 
-- **URL**: `/api/login`
+- **URL**: `/api/user/login`
 - **Method**: `POST`
 - **Body**:
   ```json
@@ -71,6 +71,26 @@ This project is a Node.js API that implements authentication using JSON Web Toke
 - **Response**:
   - Success: `{ "auth-token": "your_jwt_token" }`
   - Error: `{ "error": "Invalid password" }`
+
+### Get User Information
+
+- **URL**: `/api/posts`
+- **Method**: `GET`
+- **Headers**: 
+  - `Authorization: Bearer your_jwt_token`
+- **Response**: 
+  - **Success**: Returns the user information.
+    ```json
+    {
+      "name": "User Name",
+      "email": "user@example.com",
+
+    }
+    ```
+  - **Error**: 
+    ```json
+    "Unauthorized"
+    ```
 
 ## Technologies Used
 
@@ -85,4 +105,25 @@ This project is a Node.js API that implements authentication using JSON Web Toke
 ## Contributing
 
 Feel free to fork the repository, make changes, and submit a pull request.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
